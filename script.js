@@ -15,3 +15,17 @@ hamburger.addEventListener('click', function () {
         menu.style.display = "block"
     } 
 });
+ const commonBtn = document.querySelector(".btn common-btn");
+        commonBtn.addEventListener("click", ()=> {
+            confetti({
+                 particleCount: 100,
+                 spread: 90,
+                 origin: { y: 0.6 },
+                   });
+                   confetti({
+                     particleCount: 100,
+                     spread: 90,
+                     origin: { y: 0.6 },
+                   });
+                 });
+             

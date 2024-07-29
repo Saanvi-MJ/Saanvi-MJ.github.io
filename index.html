@@ -14,7 +14,7 @@
              crossorigin="anonymous" referrerpolicy="no-referrer" /> 
     <link rel="stylesheet" href="style.css"> 
     <link rel="stylesheet" href="responsive.css"> 
-    <script src="script.js"> </script>
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
     
    
 </head> 
@@ -78,22 +78,7 @@
             <div class="intro-buttons"> 
               <button class="btn common-btn">Welcome</button> 
             </div> 
-            <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
-              <script>
-                 const commonBtn = document.querySelector(".btn common-btn");
-                  commonBtn.addEventListener("click", ()=> {
-                  confetti({
-                     particleCount: 100,
-                     spread: 90,
-                     origin: { y: 0.6 },
-                   });
-                   confetti({
-                     particleCount: 100,
-                     spread: 90,
-                     origin: { y: 0.6 },
-                   });
-                 });
-              </script>
+            
         </div> 
         <div>
           <img src="images/1722238795413.png" alt="My profile" width="50%" height="50%">
