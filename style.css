@@ -6,6 +6,10 @@ body {
     box-sizing: border-box; 
     font-family: 'Poppins', sans-serif; 
 } 
+img {
+    width: 400px;
+    height:480px;
+  }
   
 /* Header Navbar Styles */
 .navbar { 
@@ -15,7 +19,7 @@ body {
     position: fixed; 
     top: 0; 
     width: 100%; 
-    background-image: linear-gradient(90deg,#728495, #98A9BE,#B4C5DB); 
+    background-image: linear-gradient(90deg,#CDAD85, #9C9E80,#605F4B); 
     background-color: transparent; 
 } 
   
@@ -24,7 +28,7 @@ body {
 } 
   
 .logo .logo-heading { 
-    color: #fff; 
+    color: #FFF; 
 } 
   
 .menu { 
@@ -33,7 +37,7 @@ body {
   
 .hamburger { 
     display: none; 
-    color: #fff; 
+    color: #000; 
     font-size: 25px; 
 } 
   
@@ -85,7 +89,7 @@ body {
 .about { 
     display: flex; 
     align-items: center; 
-    background-image: linear-gradient(45deg, #4A5B6A, #728495); 
+    background-image: linear-gradient(45deg, #9C9E80, #CDAD85); 
     justify-content: space-between; 
     width: 100%; 
 } 
@@ -154,7 +158,7 @@ body {
     align-items: center; 
     justify-content: center; 
     border-radius: 20px; 
-    background-image: linear-gradient(#263A47, #4A5B6A, #728495); 
+    background-image: linear-gradient(#CDAD85, #9C9E80, #C47457); 
     padding: 1rem; 
 } 
   
@@ -162,7 +166,7 @@ body {
     height: 100px; 
     width: 100px; 
     border-radius: 50%; 
-    background-color: #B4C5DB; 
+    background-color: #605F4B; 
     display: flex; 
     align-items: center; 
     justify-content: center; 
@@ -170,7 +174,7 @@ body {
   
 .icon svg { 
     font-size: 30px; 
-    color: #fff; 
+    color: #FFF; 
 } 
   
 /* Contact section styles */
@@ -209,8 +213,8 @@ body {
   
 /* Footer Styles */
 .footer { 
-    background-color: #263A47; 
-    color: #fff; 
+    background-color: #605F4B; 
+    color: #F9F4EA; 
     padding: 2rem; 
 } 
   
@@ -222,7 +226,7 @@ body {
     width: 50px; 
     margin: 1rem 1rem 0 1rem; 
     border-radius: 50%; 
-    background-color: #B4C5DB; 
+    background-color: #9C9E80; 
 } 
   
 .footer-links { 
@@ -246,11 +250,6 @@ body {
     list-style: none; 
 } 
   
-  
-  
-  
-  
-  
 /* utility classes */
 .greet-heading { 
     font-size: 1.3rem; 
@@ -267,7 +266,7 @@ body {
 .sub-heading { 
     margin: 0; 
     font-size: 0.8rem; 
-    color: #ccc; 
+    color: #CCC; 
     font-weight: lighter; 
 } 
   
@@ -292,17 +291,17 @@ body {
 } 
   
 .common-btn { 
-    background-color: #98A9BE; 
+    background-color: #CDAD85; 
     color: #fff; 
-    border: 2px solid #4A5B6A; 
+    border: 2px solid #F9F4EA; 
     transition: all 0.25s; 
     cursor: pointer;
 } 
   
 .common-btn:hover { 
-    background-color: #fff; 
-    color: #98A9BE; 
-    border: 2px solid #4A5B6A; 
+    background-color: #F9F4EA; 
+    color: #605F4B; 
+    border: 2px solid #9C9E80; 
     outline: none; 
 } 
   
@@ -338,5 +337,5 @@ body {
 } 
   
 .blue-text { 
-    color: #B4C5DB; 
+    color: #000; 
 }
