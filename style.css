@@ -225,6 +225,7 @@ section.about-container h1 {
 div.bigcard-container {
   display: flex;
   align-items: start;
+  color: snow;
 }
 div.about-card{
   width: 79rem;
