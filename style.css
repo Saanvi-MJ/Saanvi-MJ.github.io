@@ -5,6 +5,9 @@
   src: url("fonts/Lucida-Calligraphy.ttf");
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -14,6 +17,7 @@
 body {
   min-height: 100vh;
   width: 100vw;
+  overflow-x: hidden;
   background-color: #f0ece0;
 }
 
@@ -46,13 +50,13 @@ img.logo {
   list-style: none;
 }
 
-.nav-item > a {
+.nav-item>a {
   text-decoration: none;
   font-family: Inter;
   color: #353148;
 }
 
-.nav-item > a:hover {
+.nav-item>a:hover {
   color: #ee4d87;
 }
 
@@ -111,7 +115,96 @@ div.home-info {
   padding: 0 0.5rem;
 }
 
-.home-info button {
+.home-info a {
+  font-family: "Lilita One";
+  font-size: 1.2rem;
+  font-weight: 400;
+  background-color: #ee4d87;
+  border: none;
+  color: #f0ece0;
+  padding: 10px 25px;
+  border-radius: 999px;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  text-decoration: none;
+}
+
+section.achievements-container {
+  min-height: 100vh;
+  width: 100%;
+  padding-top: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  gap: 3rem;
+  margin-top: 10rem;
+  text-align: center;
+}
+
+section.achievements-container h1 {
+  font-family: "Jacques Francois";
+  font-size: 3rem;
+  font-weight: 300;
+  color: #353148;
+}
+
+div.card-container {
+  display: flex;
+  align-items: start;
+  column-gap: 3rem;
+}
+
+div.card {
+  width: 22rem;
+  aspect-ratio: 0.98;
+  background-color: #f5f5f5;
+  border-radius: 2rem;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 1rem;
+}
+
+div.card img {
+  aspect-ratio: 1;
+  width: 8rem;
+  border-radius: 500px;
+}
+div.card h2{
+  color: #192733;
+  font-family: "Source Sans 3";
+  font-weight:400;
+  /* #b6c7d6 */
+}
+
+div.card h4 {
+  color:#a5a5a5;
+  font-family: "Noto Sans";
+  font-weight: 200;
+  text-justify: inter-word;
+  justify-content: center;
+}
+div.card a{
+  font-family: "Noto Sans";
+  font-size: 1rem;
+  font-weight: 400;
+  background-color: #353148 ;
+  border: none;
+  color: #f0ece0;
+  padding: 5px 20px;
+  border-radius: 0px;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  text-decoration: none;
+}
+
+
+
+/* 
+div.card a {
   font-family: "Lilita One";
   font-size: 1.2rem;
   font-weight: 400;
@@ -122,7 +215,8 @@ div.home-info {
   border-radius: 999px;
   cursor: pointer;
   margin-top: 0.5rem;
-}
+  text-decoration: none;
+} */
 
 @media (max-width: 795px) {
   section.home-container {
@@ -141,12 +235,15 @@ div.home-info {
   header {
     padding-top: 2rem;
   }
+
   img.logo {
     display: none;
   }
+
   nav.nav {
     justify-content: center;
   }
+
   .nav-container {
     gap: 1rem;
   }
