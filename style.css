@@ -165,7 +165,108 @@ div.card {
   align-items: center;
   flex-direction: column;
   gap: 20px;
+  transition: 1s box-shadow;
   padding-top: 1rem;
+  position: relative;
+}
+div.card:hover {
+  box-shadow: 0 5px 35px 0px rgba(0,0,0,.1);
+}
+
+div.card:hover::before, div:hover::after {
+  display: block;
+  content: '';
+  position: absolute;
+  aspect-ratio: 0.98;
+  width: 22rem;
+  /* height: 250px; */
+  background: #ee4d87;
+  border-radius: 2rem;
+  z-index: -1;
+  animation: 1s clockwise infinite;
+}
+
+div.card:hover:after {
+  background: #353148;
+  animation: 2s counterclockwise infinite;
+}
+
+@keyframes clockwise {
+  0% {
+    top: -5px;
+    left: 0;
+  }
+  12% {
+    top: -2px;
+    left: 2px;
+  }
+  25% {
+    top: 0;
+    left: 5px;    
+  }
+  37% {
+    top: 2px;
+    left: 2px;
+  }
+  50% {
+    top: 5px;
+    left: 0;    
+  }
+  62% {
+    top: 2px;
+    left: -2px;
+  }
+  75% {
+    top: 0;
+    left: -5px;
+  }
+  87% {
+    top: -2px;
+    left: -2px;
+  }
+  100% {
+    top: -5px;
+    left: 0;    
+  }
+}
+
+@keyframes counterclockwise {
+  0% {
+    top: -5px;
+    right: 0;
+  }
+  12% {
+    top: -2px;
+    right: 2px;
+  }
+  25% {
+    top: 0;
+    right: 5px;    
+  }
+  37% {
+    top: 2px;
+    right: 2px;
+  }
+  50% {
+    top: 5px;
+    right: 0;    
+  }
+  62% {
+    top: 2px;
+    right: -2px;
+  }
+  75% {
+    top: 0;
+    right: -5px;
+  }
+  87% {
+    top: -2px;
+    right: -2px;
+  }
+  100% {
+    top: -5px;
+    right: 0;    
+  }
 }
 
 div.card img {
