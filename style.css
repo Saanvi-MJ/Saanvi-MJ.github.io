@@ -173,13 +173,12 @@ div.card:hover {
   box-shadow: 0 5px 35px 0px rgba(0,0,0,.1);
 }
 
-div.card:hover::before, div:hover::after {
+div.card:hover::before, div.card:hover::after {
   display: block;
   content: '';
   position: absolute;
   aspect-ratio: 0.98;
   width: 22rem;
-  /* height: 250px; */
   background: #ee4d87;
   border-radius: 2rem;
   z-index: -1;
