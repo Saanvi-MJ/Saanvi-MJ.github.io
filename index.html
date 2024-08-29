@@ -1,173 +1,292 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.scss" />
+    <title>Saanvi MJ</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="style.scss">
-  <title>Saanvi MJ</title>
-</head>
+  <body>
+    <header>
+      <nav class="nav">
+        <img class="logo" src="images/yum-j.png" alt="logo" />
+        <ul class="nav-container">
+          <li class="nav-item">
+            <a href="#">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a href="#">ABOUT</a>
+          </li>
+          <li class="nav-item">
+            <a href="#">ACHIEVEMENTS</a>
+          </li>
+          <li class="nav-item">
+            <a href="#">PROJECTS</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main-container">
+      <section class="home-container">
+        <div class="home-info">
+          <h1>Hello,</h1>
+          <h2>I'm <span>Saanvi MJ</span></h2>
+          <p>Welcome to my portfolio</p>
+          <a
+            href="/SaanviMjResume.pdf"
+            target="_blank"
+            onclick="welcomeConfetti()"
+            >My Resume</a
+          >
+        </div>
+        <img style="float: right;" src="/images/My image.jpeg" alt="my-image" /
+        width="350" height="450">
+      </section>
 
-<body>
-  <header>
-    <nav class="nav">
-      <img class="logo" src="images/yum-j.png" alt="logo" />
-      <ul class="nav-container">
-        <li class="nav-item">
-          <a href="#">HOME</a>
-        </li>
-        <li class="nav-item">
-          <a href="#">ABOUT</a>
-        </li>
-        <li class="nav-item">
-          <a href="#">ACHIEVEMENTS</a>
-        </li>
-        <li class="nav-item">
-          <a href="#">PROJECTS</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-  <main class="main-container">
-    <section class="home-container">
-      <div class="home-info">
-        <h1>Hello,</h1>
-        <h2>I'm <span>Saanvi MJ</span></h2>
-        <p>Welcome to my portfolio</p>
-        <a href="/SaanviMjResume.pdf" target="_blank" onclick="welcomeConfetti()">My Resume</a>
-       </div>
-       <img style="float: right;"
-       src="/images/My image.jpeg"
-       alt="my-image" / width="350" height="450">
-      
-    </section>
-
-        <section class="about-container">
-          <h1>ABOUT ME</h1>
-          <div class="bigcard-container">
-            <div class="about-card">
-              <div class="row">
-              <div class="column-one" >
-              <h1>Who am I ?</h1>
-              <h4>I'm a hardworking college student with a motivated attitude and active participation with variety of
-                powerful skills. I have embarked the skills of designing websites in Figma, also Machine Learning and
-              Data Science Engineer.</h4>
-              <h4>Apart from my academics, I have been a Bharatanatyam dancer since the fourth grade and served in the Scouts and Guides,
-                 beginning with Cubs and Bulbuls in the first grade and progressing to the Rajyapuraskar Guide by the tenth grade.</h4>
-                <h4>I am proficient in speaking and writing Kannada, English, and Hindi. I have also been actively involved in various stage performance activities such as MC,
-                  profile reading, and giving presentations.</h4>
-                <h4>Currently, I am pursuing a degree in engineering with a focus on Artificial Intelligence and Machine Learning,
-                 and I am eager to excel in my career.</h4>
-                </div>
-                <div class="column-two" > 
-                 <h3>INTERNSHIPS</h3>
-                 <h4> Compsoft Technologies | 10/2023 - 12/2023 </h4>
-                 <h5><span> Completed ML with Python internship on the project titled Sentiment Analysis of Lockdown In
-                  India During Covid-19 A Case Study.</span></h5>
-                  _____________________________________________________________________
-                 <h4> UniConverge Technologies | 07/2023 - 08/2023 </h4>
-                 <h5><span> Completed Python internship in upSkill campus which is in Partnership with its Industrial
-                  partner UCT on the project named Password Manager.</span></h5>
-                  _____________________________________________________________________
-                <br>
-                <br>
-                   <p style="font-size: 24px; color: #9cc04a;">SKILLS</p>
-                   <h4 style="font-size: small;">HTML & CSS, Python, Java, AngularJS, LaTeX, Machine Learning, SQL, Figma,
-                    UI / UX Design, Wireframing, postgreSQL, Data Analysis, Data Science, JavaScript, Advanced MS Excel, PowerBI, MS Office.</h4>
-               
-                </div>
+      <section class="about-container">
+        <h1>ABOUT ME</h1>
+        <div class="bigcard-container">
+          <div class="about-card">
+            <div class="row">
+              <div class="column-one">
+                <h1>Who am I ?</h1>
+                <h4>
+                  I'm a hardworking college student with a motivated attitude
+                  and active participation with variety of powerful skills. I
+                  have embarked the skills of designing websites in Figma, also
+                  Machine Learning and Data Science Engineer.
+                </h4>
+                <h4>
+                  Apart from my academics, I have been a Bharatanatyam dancer
+                  since the fourth grade and served in the Scouts and Guides,
+                  beginning with Cubs and Bulbuls in the first grade and
+                  progressing to the Rajyapuraskar Guide by the tenth grade.
+                </h4>
+                <h4>
+                  I am proficient in speaking and writing Kannada, English, and
+                  Hindi. I have also been actively involved in various stage
+                  performance activities such as MC, profile reading, and giving
+                  presentations.
+                </h4>
+                <h4>
+                  Currently, I am pursuing a degree in engineering with a focus
+                  on Artificial Intelligence and Machine Learning, and I am
+                  eager to excel in my career.
+                </h4>
+              </div>
+              <div class="column-two">
+                <h3>INTERNSHIPS</h3>
+                <h4>Compsoft Technologies | 10/2023 - 12/2023</h4>
+                <h5>
+                  <span>
+                    Completed ML with Python internship on the project titled
+                    Sentiment Analysis of Lockdown In India During Covid-19 A
+                    Case Study.</span
+                  >
+                </h5>
+                _____________________________________________________________________
+                <h4>UniConverge Technologies | 07/2023 - 08/2023</h4>
+                <h5>
+                  <span>
+                    Completed Python internship in upSkill campus which is in
+                    Partnership with its Industrial partner UCT on the project
+                    named Password Manager.</span
+                  >
+                </h5>
+                _____________________________________________________________________
+                <br />
+                <br />
+                <p style="font-size: 24px; color: #9cc04a">SKILLS</p>
+                <h4 style="font-size: small">
+                  HTML & CSS, Python, Java, AngularJS, LaTeX, Machine Learning,
+                  SQL, Figma, UI / UX Design, Wireframing, postgreSQL, Data
+                  Analysis, Data Science, JavaScript, Advanced MS Excel,
+                  PowerBI, MS Office.
+                </h4>
+              </div>
 
               <div class="vl"></div>
-             
-          </div>
             </div>
           </div>
-</section>
+        </div>
+      </section>
 
-
-    <section class="achievements-container">
-      <h1>ACHIEVEMENTS</h1>
-      <div class="card-container">
-        <div class="card">
-          <img
-            src="/images/firstcb.png"
-            alt="chutiya">
+      <section class="achievements-container">
+        <h1>ACHIEVEMENTS</h1>
+        <div class="card-container">
+          <div class="card">
+            <img src="/images/firstcb.png" alt="chutiya" />
             <h2>Hackathon</h2>
-          <h4>Clinched first Place in National level Hackathon during amBITion 2024 hosted by Department of CSE of Bangalore Institute of
-            Technology on July 07, 2024.</h4>
+            <h4>
+              Clinched first Place in National level Hackathon during amBITion
+              2024 hosted by Department of CSE of Bangalore Institute of
+              Technology on July 07, 2024.
+            </h4>
             <a href="" target="_blank">view</a>
-        </div>
-        <div class="card"> 
-          <img src="/images/firstcw.png"
-            alt="chutiya">
+          </div>
+          <div class="card">
+            <img src="/images/firstcw.png" alt="chutiya" />
             <h2>Debugging</h2>
-          <h4>Secured first Place in Debugging during E-Manthana 2024 hosted by Department of ECE of Adichunchanagiri Institute
-            of Technology Chikkamagaluru on June 21, 2024.
+            <h4>
+              Secured first Place in Debugging during E-Manthana 2024 hosted by
+              Department of ECE of Adichunchanagiri Institute of Technology
+              Chikkamagaluru on June 21, 2024.
             </h4>
             <a href="" target="_blank">view</a>
-        </div>
-        <div class="card"> 
-          <img src="/images/firstcw.png"
-            alt="chutiya">
+          </div>
+          <div class="card">
+            <img src="/images/firstcw.png" alt="chutiya" />
             <h2>Cyber Etymology</h2>
-          <h4>Secured first Place in Cyber Etymology
-            during DigitISE 2024 hosted by Department of ISE of Adichunchanagiri Institute of
-            Technology Chikkamagaluru on June 07 and 08, 2024.</h4>
-            <a href="" target="_blank">view</a>
-        </div>
-      </div>
-      <div class="card-container">
-
-        <div class="card">
-          <img src="/images/firstcw.png"
-            alt="chutiya">
-            <h2>Mad Ads</h2>
-          <h4>Clinched first Place in Mad Ads during Samvith 2023 hosted by BGS College of Engineering and Technology
-            Bangalore on September 06, 2023.</h4>
-            <a href="" target="_blank">view</a>
-        </div>
-        <div class="card">
-          <img src="/images/thirdc.png"
-            alt="chutiya">
-            <h2>Mime Act</h2>
-          <h4>Secured third Place in Mime
-            during Chunchana 2022 hosted by Adichunchanagiri Institute of Technology
-            Chikkamagaluru June 18, 2022.</h4>
-            <a href="" target="_blank">view</a>
-        </div>
-        <div class="card">
-          <img src="/images/firstcb.png"
-            alt="chutiya">
-            <h2>Rajya Puraskar</h2>
-          <h4>Award of Rajya Puraskar Guide
-            under the patron Vajubhai Valla, Former Governor of Karnataka, on February 3rd 2018.
+            <h4>
+              Secured first Place in Cyber Etymology during DigitISE 2024 hosted
+              by Department of ISE of Adichunchanagiri Institute of Technology
+              Chikkamagaluru on June 07 and 08, 2024.
             </h4>
             <a href="" target="_blank">view</a>
+          </div>
         </div>
-      </div>
-    </section>
-    <section class="project-container">
-      <h1>PROJECTS</h1>
-      <div class="small-container">
-        <div class="cards">
+        <div class="card-container">
+          <div class="card">
+            <img src="/images/firstcw.png" alt="chutiya" />
+            <h2>Mad Ads</h2>
+            <h4>
+              Clinched first Place in Mad Ads during Samvith 2023 hosted by BGS
+              College of Engineering and Technology Bangalore on September 06,
+              2023.
+            </h4>
+            <a href="" target="_blank">view</a>
+          </div>
+          <div class="card">
+            <img src="/images/thirdc.png" alt="chutiya" />
+            <h2>Mime Act</h2>
+            <h4>
+              Secured third Place in Mime during Chunchana 2022 hosted by
+              Adichunchanagiri Institute of Technology Chikkamagaluru June 18,
+              2022.
+            </h4>
+            <a href="" target="_blank">view</a>
+          </div>
+          <div class="card">
+            <img src="/images/firstcb.png" alt="chutiya" />
+            <h2>Rajya Puraskar</h2>
+            <h4>
+              Award of Rajya Puraskar Guide under the patron Vajubhai Valla,
+              Former Governor of Karnataka, on February 3rd 2018.
+            </h4>
+            <a href="" target="_blank">view</a>
+          </div>
+        </div>
+      </section>
+      <section class="project-container">
+        <h1>PROJECTS</h1>
+        <div class="small-container">
+          <div class="cards">
             <header class="cards__thumb">
-                <a href="#"><img src="https://images.unsplash.com/photo-1501443762994-82bd5dace89a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"/></a>
+              <a href="#"
+                ><img
+                  src="https://images.unsplash.com/photo-1501443762994-82bd5dace89a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
+              /></a>
             </header>
             <div class="cards__body">
-                <div class="cards__category"><a href="#">pet</a></div>
-                <h2 class="cards__title"><a href="#">an ice cream sundae party！</a></h2>
-                <div class="cards__subtitle">an ice cream sundae party！</div>
-                <p class="cards__description">5. Pour the mixture into a non-stick container and then freeze overnight. Take treating your dog a step further by turning it into an ice cream sundae party!</p>
+              <div class="cards__category"><a href="#">pet</a></div>
+              <h2 class="cards__title">
+                <a href="#">an ice cream sundae party！</a>
+              </h2>
+              <div class="cards__subtitle">an ice cream sundae party！</div>
+              <p class="cards__description">
+                5. Pour the mixture into a non-stick container and then freeze
+                overnight. Take treating your dog a step further by turning it
+                into an ice cream sundae party!
+              </p>
             </div>
           </div>
-      </div>
- </section>
- 
-</main>
-<script src="/main.js"></script>
-</body>
-
+          <div class="cards">
+            <header class="cards__thumb">
+              <a href="#"
+                ><img
+                  src="https://images.unsplash.com/photo-1501443762994-82bd5dace89a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
+              /></a>
+            </header>
+            <div class="cards__body">
+              <div class="cards__category"><a href="#">pet</a></div>
+              <h2 class="cards__title">
+                <a href="#">an ice cream sundae party！</a>
+              </h2>
+              <div class="cards__subtitle">an ice cream sundae party！</div>
+              <p class="cards__description">
+                5. Pour the mixture into a non-stick container and then freeze
+                overnight. Take treating your dog a step further by turning it
+                into an ice cream sundae party!
+              </p>
+            </div>
+          </div>
+          <div class="cards">
+            <header class="cards__thumb">
+              <a href="#"
+                ><img
+                  src="https://images.unsplash.com/photo-1501443762994-82bd5dace89a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
+              /></a>
+            </header>
+            <div class="cards__body">
+              <div class="cards__category"><a href="#">pet</a></div>
+              <h2 class="cards__title">
+                <a href="#">an ice cream sundae party！</a>
+              </h2>
+              <div class="cards__subtitle">an ice cream sundae party！</div>
+              <p class="cards__description">
+                5. Pour the mixture into a non-stick container and then freeze
+                overnight. Take treating your dog a step further by turning it
+                into an ice cream sundae party!
+              </p>
+            </div>
+          </div>
+          <div class="cards">
+            <header class="cards__thumb">
+              <a href="#"
+                ><img
+                  src="https://images.unsplash.com/photo-1501443762994-82bd5dace89a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
+              /></a>
+            </header>
+            <div class="cards__body">
+              <div class="cards__category"><a href="#">pet</a></div>
+              <h2 class="cards__title">
+                <a href="#">an ice cream sundae party！</a>
+              </h2>
+              <div class="cards__subtitle">an ice cream sundae party！</div>
+              <p class="cards__description">
+                5. Pour the mixture into a non-stick container and then freeze
+                overnight. Take treating your dog a step further by turning it
+                into an ice cream sundae party!
+              </p>
+            </div>
+          </div>
+          <div class="cards">
+            <header class="cards__thumb">
+              <a href=""
+                ><img
+                  src="https://images.unsplash.com/photo-1501443762994-82bd5dace89a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
+              /></a>
+            </header>
+            <div class="cards__body">
+              <div class="cards__category"><a href="#">pet</a></div>
+              <h2 class="cards__title">
+                <a href="#">an ice cream sundae party！</a>
+              </h2>
+              <div class="cards__subtitle">an ice cream sundae party！</div>
+              <p class="cards__description">
+                5. Pour the mixture into a non-stick container and then freeze
+                overnight. Take treating your dog a step further by turning it
+                into an ice cream sundae party!
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="/main.js"></script>
+  </body>
 </html>
