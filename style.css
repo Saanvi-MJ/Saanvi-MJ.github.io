@@ -4,7 +4,6 @@
   font-family: "Lucida Calligraphy";
   src: url("fonts/Lucida-Calligraphy.ttf");
 }
-
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
@@ -489,7 +488,7 @@ div.cards:hover {
 .cards__thumb {
   height: 245px;
   overflow: hidden;
-  background-color: #413d53;
+  background-color: #262626;
   /* -webkit-transition: height 0.5s; */
   transition: height 0.5s;
 }
@@ -535,25 +534,25 @@ div.cards__body {
   padding: 0 15px;
   background-color: #9cc04a;
   color: #413d53;
-  text-transform: uppercase;
-  font-size: 11px;
+  font-size: 14px;
   line-height: 25px;
 }
 
 .cards__title {
   margin: 0;
   padding: 0 0 10px 0;
-  color: #353535;
-  font-size: 22px;
-  font-weight: bold;
+  color: #262626;
+  font-size: 21px;
+  font-weight: 150px;
   text-transform: uppercase;
+  font-family: "Jacques Francois";
 }
 
 .cards__subtitle {
   margin: 0;
   padding: 0 0 10px 0;
-  font-size: 19px;
-  color: #353148;
+  font-size: 18px;
+  color: #f0ece0;
 }
 
 .cards__description {
@@ -563,7 +562,7 @@ div.cards__body {
   bottom: 56px;
   margin: 0;
   padding: 0;
-  color: #f0ece0;
+  color: #262626;
   line-height: 27px;
   opacity: 0;
   /* -webkit-transform: translateY(45px); */
@@ -591,7 +590,7 @@ div.small-container {
   margin-bottom: 2rem;
 }
 footer{
-  background-color: #353148;
+  background-color: #262626;
   min-height: 10rem;
   width: 100%;
   padding-top: 2rem;
@@ -634,10 +633,10 @@ div.footer-container ul li a {
   height: 60px;
   text-align: center;
   line-height: 63px;
-  background: #ee4d87;
+  background: #333;
   border-radius: 50%;
   font-size: 30px;
-  color: #353148;
+  color: #666;
   transition: .5s;
 }
 
@@ -657,11 +656,11 @@ div.footer-container ul li a::before {
 
 div.footer-container ul li a:hover::before {
   transform: scale(1.1);
-  box-shadow: 0 0 15px #9cc04a;
+  box-shadow: 0 0 15px #ee4d87;
 }
 
 div.footer-container ul li a:hover {
-  color: #9cc04a;
-  box-shadow: 0 0 5px #9cc04a;
-  text-shadow: 0 0 5px #9cc04a;
+  color: #ee4d87;
+  box-shadow: 0 0 5px #ee4d87;
+  text-shadow: 0 0 5px #ee4d87;
 }
