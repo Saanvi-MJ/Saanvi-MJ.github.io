@@ -91,7 +91,6 @@ div.home-info {
   text-align: center;
   padding: 0 0.5rem;
 }
-
 .home-info h2 {
   font-family: "Lucida Calligraphy";
   font-weight: 300;
@@ -100,7 +99,6 @@ div.home-info {
   text-align: center;
   padding: 0 0.5rem;
 }
-
 .home-info h2 span {
   color: #ee4d87;
 }
@@ -330,7 +328,7 @@ div.bigcard-container {
 div.about-card {
   width: 79rem;
   height: 40rem;
-  background-color: #353148;
+  background-color: #262626;
   display: flex;
   justify-content: start;
   padding-top: 1rem;
