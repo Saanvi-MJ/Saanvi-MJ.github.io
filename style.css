@@ -324,10 +324,11 @@ div.bigcard-container {
   display: flex;
   align-items: start;
   color: snow;
+  width: 100%;
 }
 div.about-card {
-  width: 79rem;
-  height: 40rem;
+  width: 100%;
+  height: 100vh;
   background-color: #262626;
   display: flex;
   justify-content: start;
