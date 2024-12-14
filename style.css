@@ -148,7 +148,7 @@ img.myimg{
   display: grid;
   
 
-  --border-size: 0.6rem;
+  --border-size: 0.4rem;
   border: var(--border-size) solid transparent;
 
   /* Paint an image in the border */
