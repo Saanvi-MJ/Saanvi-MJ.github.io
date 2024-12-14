@@ -125,6 +125,12 @@ div.home-info {
   margin-top: 0.5rem;
   text-decoration: none;
 }
+img.myimg{
+  float: right;
+  width: 350px;
+  height: 350px;
+  border-radius: 5rem;
+}
 
 section.achievements-container {
   min-height: 100vh;
