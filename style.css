@@ -129,8 +129,68 @@ img.myimg{
   float: right;
   width: 350px;
   height: 350px;
-  border-radius: 5rem;
+  /* border-radius: 5rem; */
 }
+:root {
+  --angle: 45deg;
+  --opacity: 0.5;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.myimg {
+  width: 350px;
+  height: 350px;
+  display: grid;
+  
+
+  --border-size: 0.6rem;
+  border: var(--border-size) solid transparent;
+
+  /* Paint an image in the border */
+  border-image: conic-gradient(
+      from var(--angle),
+      #ee4d87 0deg 120deg,
+      #353148 120deg 240deg,
+      #9cc04a 240deg 360deg
+    )
+    1 stretch;
+  
+}
+
+@property --opacity {
+  syntax: "<number>";
+  initial-value: 0.5;
+  inherits: false;
+}
+
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+@keyframes opacityChange {
+  to {
+    --opacity: 1;
+  }
+}
+
+@keyframes rotate {
+  to {
+    --angle: 360deg;
+  }
+}
+
+.myimg {
+  animation: rotate 4s linear infinite, opacityChange 3s infinite alternate;
+}
+
+
 
 section.achievements-container {
   min-height: 100vh;
