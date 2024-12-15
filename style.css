@@ -6,6 +6,9 @@
 }
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Creepster&family=Roboto+Slab:wght@100..900&family=Russo+One&family=Sacramento&family=Sarpanch:wght@400;500;600;700;800;900&display=swap');
+
+
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
 * {
   margin: 0;
@@ -344,7 +347,7 @@ div.card h2 {
   color: #192733;
   font-family: "Source Sans 3";
   font-weight: 400;
-  /* #b6c7d6 */
+  
 }
 
 div.card h4 {
@@ -416,19 +419,18 @@ div.about-card h2 {
 }
 div.about-card h4 {
   color: #f0ece0;
-  font-family: Inter;
-  font-weight: 250;
+  font-family: "Sacramento", cursive;
+  font-weight: 400;
   padding-top: 2rem;
   padding-right: 3rem;
   padding-left: 1rem;
-  text-align: justify;
+ text-align: justify;
 }
 div.about-card h3 {
   color: #9cc04a;
   padding-top: 0.2rem;
   font-weight: 300;
   font-family: Inter;
-  /* font-size: 1.3rem; */
   text-justify: left;
 }
 
@@ -467,7 +469,7 @@ div.column-two {
 
 
 div.about-card h5 {
-  color: #b6c7d6;
+  color: #f0ece0;
   font-family: "Jacques Francois";
   font-weight: 100;
   padding-top: 1rem;
