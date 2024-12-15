@@ -49,14 +49,27 @@ img.logo {
   list-style: none;
 }
 
-.nav-item > a {
+.nav-link {
   text-decoration: none;
-  font-family: Inter;
   color: #353148;
+  font-family: Inter;
+  transition: color 0.3s ease;
 }
 
-.nav-item > a:hover {
-  color: #9cc04a;
+.nav-item:nth-child(1) .nav-link:hover {
+  color: #9cc04a; 
+}
+
+.nav-item:nth-child(2) .nav-link:hover {
+  color: #ee4d87; 
+}
+
+.nav-item:nth-child(3) .nav-link:hover {
+  color: #9cc04a; 
+}
+
+.nav-item:nth-child(4) .nav-link:hover {
+  color: #ee4d87; 
 }
 
 main.main-container {
@@ -124,22 +137,6 @@ div.home-info {
   cursor: pointer;
   margin-top: 0.5rem;
   text-decoration: none;
-}
-img.myimg{
-  float: right;
-  width: 350px;
-  height: 350px;
-  /* border-radius: 5rem; */
-}
-:root {
-  --angle: 45deg;
-  --opacity: 0.5;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
 }
 
 .myimg {
