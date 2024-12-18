@@ -675,6 +675,11 @@ footer{
   font-size: larger;
   position: relative;
 }
+
+footer:hover{
+  color:#ee4d87;
+}
+
 div.footer-container {
 display: contents;
 flex-direction: column;
