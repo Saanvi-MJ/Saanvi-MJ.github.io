@@ -117,6 +117,11 @@ div.home-info {
 }
 .home-info h2 span {
   color: #ee4d87;
+  transition: color 0.3s ease;
+}
+.home-info h2 span:hover{
+  color:#9cc04a;
+
 }
 
 .home-info p {
@@ -141,10 +146,9 @@ div.home-info {
   margin-top: 0.5rem;
   text-decoration: none;
 }
-.wrap:hover {
+.wrap:hover{
   color: #262626 ;
   background: #9cc04a;
-  /* border-color: #ee4d87; */
   transition: all 0.4s ease 0s;
   }
 
