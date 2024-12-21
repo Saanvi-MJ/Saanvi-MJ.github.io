@@ -539,9 +539,10 @@ div.about-card h2 {
  
 
 }
-div.about-card h4 {
+
+div.about-card h4  {
   color: #f0ece0;
-  font-family: "Sacramento", cursive;
+  font-family: "Jacques Francois";
   font-weight: 400;
   padding-top: 2rem;
   padding-right: 3rem;
