@@ -428,7 +428,7 @@ div.about-card span{
   left:50%;
   width: 4px;
   height: 4px;
-  background: #fff;
+  background: #a1caf1;
   border-radius: 50%;
   box-shadow: 0 0 0 4px rgba(255,255,255,0.1),0 0 0 8px rgba(255,255,255,0.1),0 0 20px rgba(255,255,255,0.1);
   animation: animate 3s linear infinite;
@@ -440,7 +440,7 @@ div.about-card span::before{
   transform: translateY(-50%);
   width: 300px;
   height: 1px;
-  background: linear-gradient(90deg,#fff,transparent);
+  background: linear-gradient(90deg,#a1caf1,transparent);
 }
 @keyframes animate
 {
@@ -531,28 +531,30 @@ div.about-card span:nth-child(9){
 }
 
 div.about-card h2 {
-  color: #ee4d87;
+  color: #a1caf1;
   font-family: Inter;
   font-weight: 400;
-  padding-left: 0.002rem;
+  /* padding-left: 0.02rem; */
   padding-top: 0.1rem;
  
 
 }
 
 div.about-card h4  {
-  color: #f0ece0;
+  color: #ee4d87;
   font-family: "Jacques Francois";
   font-weight: 400;
   padding-top: 2rem;
   padding-right: 3rem;
   padding-left: 1rem;
  text-align: justify;
+ line-height-step: 10rem;
 }
+
 div.about-card h3 {
-  color: #9cc04a;
+  color: #a1caf1;
   padding-top: 0.2rem;
-  font-weight: 300;
+  font-weight: 400;
   font-family: Inter;
   text-justify: left;
 }
@@ -589,7 +591,7 @@ div.column-two {
 }
 
 div.about-card h5 {
-  color: #f0ece0;
+  color: #9cc04a;
   font-family: "Jacques Francois";
   font-weight: 100;
   padding-top: 1rem;
